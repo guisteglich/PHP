@@ -1,11 +1,13 @@
 <?php
 
+    $fileName = "test.txt";
+
     #abrindo o arquivo
-    $file = fopen("/var/www/html/PHP/Atv2/test.txt", 'w')
+    $file = fopen($fileName, 'w')
     or die ("Falha ao abrir arquivo");
 
     #escrevendo no arquivo
-    fwrite($file, "Aqui tem um tetse de escrita");
+    fwrite($file, "Aqui tem um teste de escrita");
     fwrite($file, "Depois há outro");
     fwrite($file, "Em seguida mais um");
 

@@ -8,7 +8,26 @@
 </head>
 <body>
 
-    <form method = "POST" action="validacao.php">
+<?php
+    $nome = $idade = $senha = $email = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nome = test_input($_POST["nome"]);
+        $idade = test_input($_POST["idade"]);
+        $senha = test_input($_POST["senha"]);
+        $email = test_input($_POST["email"]);
+        
+    }
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        // $data = htmlspecialchars($data);
+        return $data;
+    }
+?>
+
+    <form method = "POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <label> Nome: </label>
         <input type="text" name="nome" id="nome">
 
@@ -23,20 +42,32 @@
         <input type="email" name="email" id="email">
         <input type="submit">
     </form>
+<?php
+    echo "<h2>Your Input:</h2>";
+    echo $nome;
+    echo "<br>";
+    echo $idade;
+    echo "<br>";
+    echo $senha;
+    echo "<br>";
+    echo $email;
+    echo "<br>";
+
+?>
 
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            echo "Obtido via" .$_POST["nome"] ." método POST";
+            echo "Usuário " .$_POST["nome"] ." obtido via método POST";
         } 
         else{
-            echo " Obtido via ".$_POST["nome"] . "método GET";
+            echo "Usuário " .$_GET["nome"] ." obtido via método GET";
         }
     ?>
 
     <br>
     <p>----------------------------------------------------------------------------------</p>
 
-    <form method = "GET" action="validacao.php">
+    <form method = "GET" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <label> Nome: </label>
         <input type="text" name="nome" id="nome">
 
@@ -51,13 +82,26 @@
         <input type="email" name="email" id="email">
         <input type="submit">
     </form>
+
+    <?php
+    echo "<h2>Your Input:</h2>";
+    echo $nome;
+    echo "<br>";
+    echo $idade;
+    echo "<br>";
+    echo $senha;
+    echo "<br>";
+    echo $email;
+    echo "<br>";
+
+?>
   
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            echo "Obtido via" .$_POST["nome"] ." método POST";
+            echo "Usuário " .$_POST["nome"] ." obtido via método POST";
         } 
         else{
-            echo " Obtido via ".$_POST["nome"] . "método GET";
+            echo "Usuário " .$_GET["nome"] ." obtido via método GET";
         }
     ?>
 </body>
