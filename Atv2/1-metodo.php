@@ -43,7 +43,7 @@
         <input type="submit">
     </form>
 <?php
-    echo "<h2>Your Input:</h2>";
+    echo "<h2>Saída dos resultados:</h2>";
     echo $nome;
     echo "<br>";
     echo $idade;
@@ -84,7 +84,7 @@
     </form>
 
     <?php
-    echo "<h2>Your Input:</h2>";
+    echo "<h2>Saída dos resultados:</h2>";
     echo $nome;
     echo "<br>";
     echo $idade;
