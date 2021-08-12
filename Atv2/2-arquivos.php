@@ -3,7 +3,7 @@
     $fileName = "test.txt";
 
     #abrindo o arquivo
-    $file = fopen($fileName, 'w')
+    $file = fopen($fileName, "w")
     or die ("Falha ao abrir arquivo");
 
     #escrevendo no arquivo
@@ -15,7 +15,7 @@
     fclose($file);
 
     #abrindo o mesmo arquivo
-    $fileReopen = fopen("test.txt", 'a+')
+    $fileReopen = fopen("test.txt", "a+")
     or die ("Falha ao abrir arquivo para leitura/escrita");
 
     #escrevendo mais no arquivo
