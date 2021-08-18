@@ -4,8 +4,12 @@
    
    $xml = simplexml_load_file("./cachorros.xml");
 
-   echo "<br>" . $xml->cachorro[0]->nome;
-   echo "<br>" . $xml->cachorro[1]->nome;
+   echo "<br>" . $xml->cachorro[2]->raca;
+
+   foreach ($xml->children() as $dog) {
+       echo $dog->raca . ",";
+       echo $dog->porte . "<br>";
+   }
    
 ?>
 
