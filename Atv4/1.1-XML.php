@@ -4,8 +4,7 @@
 $xml=simplexml_load_file("info.xml");
 print_r($xml);
 
-echo "<br>" . $xml->info[0]->nome;
-echo "<br>" . $xml->info[1]->idade;
+echo "<br>" . $xml->document[0]->nome;
 ?>
 
 </body></html>

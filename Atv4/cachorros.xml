@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<petCachorros> 
+    <cachorro>
+        <raca>Husky </raca>
+        <idade>2 anos </idade>
+        <media> 30 <media>
+        <porte> medio </porte>
+    </cachorro>
+
+      <cachorro>
+        <raca>Caramelo </raca>
+        <idade>3 anos </idade>
+        <media> 20 <media>
+        <porte> pequeno </porte>
+    </cachorro>
+
+      <cachorro>
+        <raca>Labrador </raca>
+        <idade>1 anos </idade>
+        <media> 21 <media>
+        <porte> grande </porte>
+    </cachorro>
+
+      <cachorro>
+        <raca>Buldogue </raca>
+        <idade>2 anos </idade>
+        <media> 14 <media>
+        <porte> pequeno </porte>
+    </cachorro>
+
+      <cachorro>
+        <raca>Golden </raca>
+        <idade>6 anos </idade>
+        <media> 40 <media>
+        <porte> grande </porte>
+    </cachorro>
+</petCachorros>
