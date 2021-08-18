@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <nome>Guilherme</nome>
+    <idade>21</idade>
+    <sexo>M</sexo>
+    <profissao>Estudante</profissao>
+    <salario>500</salario>
+</document>;
