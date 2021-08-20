@@ -1,17 +1,19 @@
-<!DOCTYPE html><html><body>
-
 <?php
-   
-   $xml = simplexml_load_file("./cachorros.xml");
+$xml=simplexml_load_file("dogs.xml");
+echo $xml->getName() . "<br>";
 
-   echo "<br>" . $xml->cachorro[2]->raca;
+echo "<br>Esse é o terceiro: " . $xml->cachorro[0]->raca . "<br>";
 
-   foreach ($xml->children() as $dog) {
-       echo $dog->raca . ",";
-       echo $dog->porte . "<br>";
-   }
-   
+foreach($xml->cachorro[0] as $dog3){
+    echo "Informações do terceiro: " .$dog3 . "<br>";
+}
+
+foreach($xml->children() as $dog)
+  {
+      echo "<br>";
+      echo $dog->raca. ", ";
+      echo $dog->porte . "<br>";
+  }
 ?>
 
 
-</body></html>
