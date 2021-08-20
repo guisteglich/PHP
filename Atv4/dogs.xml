@@ -5,30 +5,35 @@
         <idade>2 anos</idade>
         <media>30</media>
         <porte>medio</porte>
+        <vmraca>10</vmraca>
     </cachorro>
     <cachorro>
         <raca>Caramelo</raca>
         <idade>3 anos</idade>
         <media>20</media>
         <porte>pequeno</porte>
+        <vmraca>14</vmraca>
     </cachorro>
     <cachorro>
         <raca>Labrador</raca>
         <idade>1 anos</idade>
         <media>21</media>
         <porte>grande</porte>
+        <vmraca>16</vmraca>
   </cachorro>
   <cachorro>
         <raca>Buldogue</raca>
         <idade>2 anos</idade>
         <media>14</media>
         <porte>pequeno</porte>
+        <vmraca>12</vmraca>
   </cachorro>
   <cachorro>
         <raca>Golden</raca>
         <idade>6 anos </idade>
         <media>40</media>
         <porte>grande</porte>
+        <vmraca>19</vmraca>
   </cachorro>
 </petCachorros>
 

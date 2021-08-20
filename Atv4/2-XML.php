@@ -10,9 +10,16 @@ foreach($xml->cachorro[0] as $dog3){
 
 foreach($xml->children() as $dog)
   {
-      echo "<br>";
+      
       echo $dog->raca. ", ";
       echo $dog->porte . "<br>";
+  }
+
+
+  foreach($xml->children() as $dog)
+  {
+      
+      echo "valor médio da raça: ". $dog->vmraca. "<br>";
   }
 ?>
 
