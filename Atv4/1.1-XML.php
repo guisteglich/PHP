@@ -2,9 +2,12 @@
 
 <?php
 $xml=simplexml_load_file("info.xml");
-print_r($xml);
+echo $xml->getName() . "<br>";
 
-echo "<br>" . $xml->document[0]->nome;
+foreach($xml->children() as $child)
+  {
+  echo $child->getName() . ": " . $child . "<br>";
+  }
 ?>
 
 </body></html>
