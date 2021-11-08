@@ -1,3 +1,4 @@
+<!DOCTYPE html><html><body>
 <?php
 
 $server="localhost";
@@ -22,3 +23,4 @@ catch(PDOException $e){
 $conn = null;
 
 ?>
+</body></html>
