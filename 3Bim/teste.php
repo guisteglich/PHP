@@ -10,16 +10,11 @@ try{
     $conn = new PDO("mysql:host=$server;dbname=$db", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // $sql = "CREATE DATABASE $db";
-    // $conn->exec($sql);
-
-    $sql = "CREATE TABLE teste (
-        id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-        nome VARCHAR(80) NOT NULL,
-        site VARCHAR(120) DEFAULT NULL,
-        PRIMARY KEY(id));";
+    $sql = "
+        INSERT INTO programadores 
+        VALUES (4, 'g', 'dado')
+        ";
     $conn->exec($sql);
-    echo "Tabela de programadores foi criada!";
 
     }
 catch(PDOException $e){
