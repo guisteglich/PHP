@@ -13,7 +13,7 @@ try{
     // $sql = "CREATE DATABASE $db";
     // $conn->exec($sql);
 
-    $sql = "CREATE TABLE teste (
+    $sql = "CREATE TABLE programadores (
         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
         nome VARCHAR(80) NOT NULL,
         site VARCHAR(120) DEFAULT NULL,
