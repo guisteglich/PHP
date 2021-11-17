@@ -12,7 +12,7 @@ try{
 
     $sql = "
         INSERT INTO programadores 
-        VALUES (4, 'g', 'dado')
+        VALUES ('guilherme', 'www.gs.com.br')
         ";
     $conn->exec($sql);
 
